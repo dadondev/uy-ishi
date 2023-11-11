@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: "Roboto";
+}
+.container {
+  padding-top: 200px;
+  max-width: 1200px;
+  gap: 20px;
+  margin: 0 auto;
+  display: flex;
+
+  flex-wrap: wrap;
+}
+a {
+  text-decoration: none;
+}
+.box {
+  width: 120px;
+  height: 60px;
+  display: flex;
+  border: 2px solid black;
+  transition: all 500ms;
+  color: black;
+}
+.box a {
+  padding-top: 20px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: inherit;
+}
+.box:hover {
+  background-color: black;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .box {
+    margin: 0 auto;
+  }
+  .box:hover {
+    background-color: white;
+    color: black;
+  }
+}
